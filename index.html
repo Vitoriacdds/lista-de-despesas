@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Back4App</title>
+   
+</head>
+<body>
+    <h1>Gerenciador de Despesas</h1>
+    
+    <form id="expenseForm">
+        <input type="text" id="description" placeholder="Descrição da Despesa" required>
+        <input type="number" id="value" placeholder="Valor" required>
+        <button type="submit">Adicionar Despesa</button>
+    </form>
+
+    <table id="expensesTable">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="total">Total das Despesas: <span id="totalValue">0</span></div>
+
+    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
